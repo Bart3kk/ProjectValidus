@@ -36,11 +36,11 @@ getgenv().VisableCheckEsp = false
 getgenv().PlayerInsideFovToggle = false
 getgenv().Distance = 1
 
-getgenv().Assist = false
-getgenv().TeamCheck = false
-getgenv().teamcheck = false
+getgenv().Assist = true
+getgenv().TeamCheck = true
+getgenv().teamcheck = true
 getgenv().VisableCheck = false
-getgenv().Triggerbot = false
+getgenv().Triggerbot = true
 getgenv().boxesp = true
 
 DeadZone.Radius = 25
@@ -73,7 +73,7 @@ local DevicePlatform = Enum.Platform.None;
 pcall(function() DevicePlatform = game:GetService("UserInputService"):GetPlatform(); end);
 IsMobile = (DevicePlatform == Enum.Platform.Android or DevicePlatform == Enum.Platform.IOS);
 
-local repo = 'https://raw.githubusercontent.com/mstudio45/LinoriaLib/dev/'
+local repo = 'https://raw.githubusercontent.com/Bart3kk/LinLib/main/'
 local repoOther = 'https://raw.githubusercontent.com/violin-suzutsuki/LinoriaLib/main/'
 
 if IsMobile then
@@ -773,7 +773,7 @@ AimAssistSetting:AddDropdown('BodyPart', {
 })
 
 --ui settings
-Library:SetWatermark('Project-Validus By Hydra#8270 (Ported by Bart3kk on GitHub)')
+Library:SetWatermark('Project-Validus By Hydra#8270')
 
 Library:OnUnload(function()
     Library.Unloaded = true
